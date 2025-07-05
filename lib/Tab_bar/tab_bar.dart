@@ -5,11 +5,9 @@ class TabBarPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: DefaultTabController(
-        length: 2,
-        child: Container(child: TabBar(tabs: [])),
-      ),
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(appBar: AppBar(bottom: TabBar(tabs: []))),
     );
   }
 }
