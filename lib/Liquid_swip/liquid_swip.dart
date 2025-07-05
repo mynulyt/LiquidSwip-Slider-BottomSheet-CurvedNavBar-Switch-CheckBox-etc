@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/Gradient/gradient.dart';
+import 'package:flutter_widget/Tab_bar/tab_bar.dart';
 import 'package:flutter_widget/swich/switch.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 
@@ -10,6 +11,7 @@ class LiquidSwip extends StatelessWidget {
   Widget build(BuildContext context) {
     final pages = [
       SwitchPage(),
+      TabBarPage(),
       Container(color: Colors.blue),
       Container(color: Colors.green),
       Container(color: Colors.pink),
