@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/Gradient/gradient.dart';
 import 'package:flutter_widget/Liquid_swip/liquid_swip.dart';
@@ -11,6 +12,16 @@ class CurvedNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: CurvedNavigationBar(
+        items: [
+          Icon(Icons.home),
+          Icon(Icons.home),
+          Icon(Icons.home),
+          Icon(Icons.home),
+          Icon(Icons.home),
+        ],
+      ),
+    );
   }
 }
