@@ -12,7 +12,7 @@ class _SwitchPageState extends State<SwitchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: _value == false ? Colors.pink : Colors.yellow,
       body: Center(
         child: Switch(
           value: _value,
