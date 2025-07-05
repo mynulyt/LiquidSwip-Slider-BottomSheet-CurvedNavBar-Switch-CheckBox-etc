@@ -7,7 +7,13 @@ class TabBarPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
-      child: Scaffold(appBar: AppBar(bottom: TabBar(tabs: []))),
+      child: Scaffold(
+        appBar: AppBar(
+          bottom: TabBar(
+            tabs: [Tab(icon: Icon(Icons.call)), Tab(icon: Icon(Icons.call))],
+          ),
+        ),
+      ),
     );
   }
 }
