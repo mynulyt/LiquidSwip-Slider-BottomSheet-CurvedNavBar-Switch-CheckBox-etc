@@ -5,6 +5,12 @@ class LiquidSwip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final pages = [
+      Container(color: Colors.amber),
+      Container(color: Colors.blue),
+      Container(color: Colors.green),
+      Container(color: Colors.pink),
+    ];
     return Scaffold(body: Center(child: Container()));
   }
 }
