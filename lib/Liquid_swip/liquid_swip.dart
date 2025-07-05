@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:liquid_swipe/liquid_swipe.dart';
 
 class LiquidSwip extends StatelessWidget {
   const LiquidSwip({super.key});
@@ -11,6 +12,6 @@ class LiquidSwip extends StatelessWidget {
       Container(color: Colors.green),
       Container(color: Colors.pink),
     ];
-    return Scaffold(body: Center(child: Container()));
+    return Scaffold(body: LiquidSwipe(pages: pages));
   }
 }
