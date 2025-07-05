@@ -9,6 +9,9 @@ class GradientPage extends StatelessWidget {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(colors: [Colors.pink, Colors.deepPurple]),
+        ),
       ),
     );
   }
