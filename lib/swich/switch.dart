@@ -8,9 +8,9 @@ class SwitchPage extends StatefulWidget {
 }
 
 class _SwitchPageState extends State<SwitchPage> {
+  bool _value = false;
   @override
   Widget build(BuildContext context) {
-    bool _value = false;
     return Scaffold(
       backgroundColor: Colors.blue,
       body: Center(
@@ -19,7 +19,7 @@ class _SwitchPageState extends State<SwitchPage> {
           onChanged: (val) {
             setState(() {
               _value = val;
-              print("Work");
+              print(_value);
             });
           },
         ),
