@@ -6,25 +6,34 @@ import 'package:flutter_widget/Tab_bar/page1.dart';
 import 'package:flutter_widget/Tab_bar/page2.dart';
 import 'package:flutter_widget/Tab_bar/tab_bar.dart';
 
-class CurvedNavBar extends StatelessWidget {
-  CurvedNavBar({super.key});
-  var _page;
+class CurvedNavBar extends StatefulWidget {
+  const CurvedNavBar({super.key});
+
+  @override
+  State<CurvedNavBar> createState() => _CurvedNavBarState();
+}
+
+class _CurvedNavBarState extends State<CurvedNavBar> {
+  int _page = 0;
+
   final pages2 = [GradientPage(), Page1(), Page2(), LiquidSwip(), TabBarPage()];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: CurvedNavigationBar(
-        index: 0,
+        index: _page,
         backgroundColor: Colors.purple,
         buttonBackgroundColor: Colors.white,
         color: Colors.white,
         animationCurve: Curves.easeInOut,
-        animationDuration: Duration(microseconds: 600),
+        animationDuration: const Duration(milliseconds: 600),
         onTap: (index) {
-          _page = index;
+          setState(() {
+            _page = index;
+          });
         },
-        items: [
+        items: const [
           Icon(Icons.home),
           Icon(Icons.message),
           Icon(Icons.ring_volume),
