@@ -12,15 +12,17 @@ class _SwitchPageState extends State<SwitchPage> {
   Widget build(BuildContext context) {
     bool _value = false;
     return Scaffold(
+      backgroundColor: Colors.blue,
       body: Center(
-        child: Switch(value: _value, onChanged: (val){
-          setState((){
-
-_value = val;
-print("Work")
-          });
-        
-        }),
+        child: Switch(
+          value: _value,
+          onChanged: (val) {
+            setState(() {
+              _value = val;
+              print("Work");
+            });
+          },
+        ),
       ),
     );
   }

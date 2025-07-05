@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/Gradient/gradient.dart';
+import 'package:flutter_widget/swich/switch.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 
 class LiquidSwip extends StatelessWidget {
@@ -8,7 +9,7 @@ class LiquidSwip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final pages = [
-      Container(color: Colors.amber),
+      SwitchPage(),
       Container(color: Colors.blue),
       Container(color: Colors.green),
       Container(color: Colors.pink),
