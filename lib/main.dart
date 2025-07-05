@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/Curved_Nav_bar/curved_nav_bar.dart';
 import 'package:flutter_widget/Liquid_swip/liquid_swip.dart';
 
 void main() => runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         appBar: AppBar(title: const Text('Material App Bar')),
-        body: LiquidSwip(),
+        body: CurvedNavBar(),
       ),
     );
   }
