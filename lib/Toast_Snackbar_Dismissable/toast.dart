@@ -7,22 +7,20 @@ class ToastMessage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Fluttertoast.showToast(
-              msg: "Flutter Toast is Working",
-              toastLength: Toast.LENGTH_LONG,
-              gravity: ToastGravity.TOP,
-              backgroundColor: Colors.red,
-              textColor: Colors.black,
+      body: ElevatedButton(
+        onPressed: () {
+          Fluttertoast.showToast(
+            msg: "Flutter Toast is Working",
+            toastLength: Toast.LENGTH_LONG,
+            gravity: ToastGravity.TOP,
+            backgroundColor: Colors.red,
+            textColor: Colors.black,
 
-              fontSize: 20,
-            );
-            print("Hello");
-          },
-          child: Text("Click me For Toast"),
-        ),
+            fontSize: 20,
+          );
+          print("Hello");
+        },
+        child: Text("Click me For Toast"),
       ),
     );
   }
