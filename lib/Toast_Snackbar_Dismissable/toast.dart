@@ -14,8 +14,9 @@ class ToastMessage extends StatelessWidget {
               msg: "Flutter Toast is Working",
               toastLength: Toast.LENGTH_LONG,
               gravity: ToastGravity.TOP,
-              backgroundColor: Colors.deepPurple,
+              backgroundColor: Colors.red,
               textColor: Colors.black,
+
               fontSize: 20,
             );
             print("Hello");
