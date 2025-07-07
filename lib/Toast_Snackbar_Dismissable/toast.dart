@@ -10,7 +10,14 @@ class ToastMessage extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Fluttertoast.showToast(msg: "Flutter Toast is Working");
+            Fluttertoast.showToast(
+              msg: "Flutter Toast is Working",
+              toastLength: Toast.LENGTH_SHORT,
+              gravity: ToastGravity.BOTTOM,
+              backgroundColor: Colors.deepPurple,
+              textColor: Colors.white,
+              fontSize: 20,
+            );
           },
           child: Text("Click me For Toast"),
         ),
