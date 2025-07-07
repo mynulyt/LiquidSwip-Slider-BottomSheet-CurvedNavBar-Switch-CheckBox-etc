@@ -8,7 +8,22 @@ class GradientPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: ToastMessage(),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(height: 50),
+              Container(
+                color: Colors.yellow,
+                height: 40,
+                child: ToastMessage(),
+              ),
+              SizedBox(height: 50),
+              Container(color: Colors.green, height: 40),
+              SizedBox(height: 50),
+              Container(color: Colors.yellow, height: 40),
+            ],
+          ),
+        ),
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
