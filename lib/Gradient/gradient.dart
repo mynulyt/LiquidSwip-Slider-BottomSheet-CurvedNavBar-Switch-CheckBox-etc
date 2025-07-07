@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget/Toast_Snackbar_Dismissable/dismissable.dart';
 import 'package:flutter_widget/Toast_Snackbar_Dismissable/snakbar.dart';
 import 'package:flutter_widget/Toast_Snackbar_Dismissable/toast.dart';
 
@@ -29,6 +30,12 @@ class GradientPage extends StatelessWidget {
 
               SizedBox(height: 50),
               Container(color: Colors.yellow, height: 40),
+              SizedBox(height: 50),
+              Container(
+                color: Colors.yellow,
+                height: 40,
+                child: DismissablePage(),
+              ),
             ],
           ),
         ),
