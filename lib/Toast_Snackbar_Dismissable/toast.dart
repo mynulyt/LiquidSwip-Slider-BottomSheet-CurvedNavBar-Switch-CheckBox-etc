@@ -12,12 +12,13 @@ class ToastMessage extends StatelessWidget {
           onPressed: () {
             Fluttertoast.showToast(
               msg: "Flutter Toast is Working",
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.BOTTOM,
+              toastLength: Toast.LENGTH_LONG,
+              gravity: ToastGravity.TOP,
               backgroundColor: Colors.deepPurple,
-              textColor: Colors.white,
+              textColor: Colors.black,
               fontSize: 20,
             );
+            print("Hello");
           },
           child: Text("Click me For Toast"),
         ),
