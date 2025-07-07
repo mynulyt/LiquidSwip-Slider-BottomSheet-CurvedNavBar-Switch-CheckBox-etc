@@ -42,7 +42,7 @@ class GradientPage extends StatelessWidget {
               SizedBox(height: 50),
               Container(
                 color: Colors.yellow,
-                height: 40,
+                height: 80,
                 child: CheckBoxPage(),
               ),
             ],

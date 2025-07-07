@@ -14,6 +14,8 @@ class _CheckBoxPageState extends State<CheckBoxPage> {
     return Scaffold(
       body: Column(
         children: <Widget>[
+          Text(_value == true ? "Checked" : "Uncheck"),
+
           Checkbox(
             value: _value,
             onChanged: (bool? value) {
