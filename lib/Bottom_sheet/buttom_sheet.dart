@@ -19,32 +19,35 @@ class _ButtomSheetPageState extends State<ButtomSheetPage> {
               context: context,
               builder: (context) {
                 return Container(
+                  color: Colors.blueGrey,
                   height: 250,
                   padding: const EdgeInsets.all(16),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: const [
-                      ListTile(
-                        title: Text("Bottom Sheet"),
-                        subtitle: Text("Is this working right?"),
-                        trailing: Icon(Icons.add),
-                      ),
-                      ListTile(
-                        title: Text("Bottom Sheet"),
-                        subtitle: Text("Is this working right?"),
-                        trailing: Icon(Icons.add),
-                      ),
-                      ListTile(
-                        title: Text("Bottom Sheet"),
-                        subtitle: Text("Is this working right?"),
-                        trailing: Icon(Icons.add),
-                      ),
-                      ListTile(
-                        title: Text("Bottom Sheet"),
-                        subtitle: Text("Is this working right?"),
-                        trailing: Icon(Icons.add),
-                      ),
-                    ],
+                  child: SingleChildScrollView(
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        ListTile(
+                          title: Text("Bottom Sheet"),
+                          subtitle: Text("Is this working right?"),
+                          trailing: Icon(Icons.add),
+                        ),
+                        ListTile(
+                          title: Text("Bottom Sheet"),
+                          subtitle: Text("Is this working right?"),
+                          trailing: Icon(Icons.add),
+                        ),
+                        ListTile(
+                          title: Text("Bottom Sheet"),
+                          subtitle: Text("Is this working right?"),
+                          trailing: Icon(Icons.add),
+                        ),
+                        ListTile(
+                          title: Text("Bottom Sheet"),
+                          subtitle: Text("Is this working right?"),
+                          trailing: Icon(Icons.add),
+                        ),
+                      ],
+                    ),
                   ),
                 );
               },
