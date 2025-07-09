@@ -10,6 +10,12 @@ class SliverAppBarPage extends StatefulWidget {
 class _SliverAppBarPageState extends State<SliverAppBarPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(expandedHeight: 200, backgroundColor: Colors.red),
+        ],
+      ),
+    );
   }
 }
