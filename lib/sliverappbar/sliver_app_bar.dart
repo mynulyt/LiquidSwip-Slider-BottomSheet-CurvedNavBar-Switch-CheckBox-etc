@@ -13,7 +13,22 @@ class _SliverAppBarPageState extends State<SliverAppBarPage> {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          SliverAppBar(expandedHeight: 200, backgroundColor: Colors.red),
+          SliverAppBar(
+            expandedHeight: 200,
+            backgroundColor: Colors.red,
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text("This is Sliver App Bar"),
+            ),
+          ),
+          SliverList(
+            delegate: SliverChildListDelegate(<Widget>[
+              ListTile(
+                title: Text("Title 1"),
+                subtitle: Text("SubTitle 1"),
+                leading: CircleAvatar(),
+              ),
+            ]),
+          ),
         ],
       ),
     );
