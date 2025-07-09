@@ -61,7 +61,7 @@ class GradientPage extends StatelessWidget {
                 child: ButtomSheetPage(),
               ),
               SizedBox(height: 50),
-              Container(color: Colors.yellow, height: 50, child: SliderPage()),
+              Container(color: Colors.yellow, height: 200, child: SliderPage()),
             ],
           ),
         ),
