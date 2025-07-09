@@ -18,6 +18,15 @@ class _SliverAppBarPageState extends State<SliverAppBarPage> {
     {"name": "Sajib", "description": "Full Stack Dev"},
     {"name": "Sakil", "description": "Full Stack Dev"},
     {"name": "Soikot", "description": "Full Stack Dev"},
+    {"name": "Mynul", "description": "Flutter Developer"},
+    {"name": "Alam", "description": "UI Designer"},
+    {"name": "Rakib", "description": "Backend Expert"},
+    {"name": "Sakib", "description": "Full Stack Dev"},
+    {"name": "Raihan", "description": "Full Stack Dev"},
+    {"name": "Mobarak", "description": "Full Stack Dev"},
+    {"name": "Sajib", "description": "Full Stack Dev"},
+    {"name": "Sakil", "description": "Full Stack Dev"},
+    {"name": "Soikot", "description": "Full Stack Dev"},
   ];
 
   @override
