@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/Bottom_sheet/buttom_sheet.dart';
 import 'package:flutter_widget/CheckBox/check_box.dart';
+import 'package:flutter_widget/Slider/slider.dart';
 import 'package:flutter_widget/Toast_Snackbar_Dismissable/dismissable.dart';
 import 'package:flutter_widget/Toast_Snackbar_Dismissable/snakbar.dart';
 import 'package:flutter_widget/Toast_Snackbar_Dismissable/toast.dart';
@@ -59,6 +60,8 @@ class GradientPage extends StatelessWidget {
                 height: 50,
                 child: ButtomSheetPage(),
               ),
+              SizedBox(height: 50),
+              Container(color: Colors.yellow, height: 50, child: SliderPage()),
             ],
           ),
         ),
