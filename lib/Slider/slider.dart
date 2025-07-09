@@ -15,6 +15,11 @@ class _SliderPageState extends State<SliderPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Text(
+            "Easy to Explanation of Slider!",
+            style: TextStyle(fontSize: _value),
+          ),
+          SizedBox(height: 10),
           Slider(
             min: 10,
             max: 50,
