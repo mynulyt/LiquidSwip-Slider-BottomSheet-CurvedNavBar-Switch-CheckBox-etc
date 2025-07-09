@@ -12,6 +12,11 @@ class GradientPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(colors: [Colors.pink, Colors.deepPurple]),
+        ),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -56,11 +61,6 @@ class GradientPage extends StatelessWidget {
               ),
             ],
           ),
-        ),
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [Colors.pink, Colors.deepPurple]),
         ),
       ),
     );
