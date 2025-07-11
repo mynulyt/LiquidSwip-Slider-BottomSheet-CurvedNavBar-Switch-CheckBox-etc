@@ -5,9 +5,6 @@ class AnimatedContainerPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Column(children: [
-        
-      ],
-    ));
+    return Scaffold(body: Column(children: [Container()]));
   }
 }
