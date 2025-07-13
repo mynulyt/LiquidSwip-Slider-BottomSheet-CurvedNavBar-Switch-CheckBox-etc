@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Widget',
       home: Scaffold(
-        appBar: AppBar(title: const Text('Material App Bar')),
+        appBar: AppBar(title: const Text('Flutter Widget App Bar')),
         body: CurvedNavBar(),
       ),
     );
