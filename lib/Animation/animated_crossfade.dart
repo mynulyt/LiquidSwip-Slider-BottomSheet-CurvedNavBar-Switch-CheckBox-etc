@@ -18,6 +18,7 @@ class _AnimatedCrossfadeState extends State<AnimatedCrossfade> {
           Center(
             child: AnimatedCrossFade(
               firstChild: Container(
+                height: 40,
                 color: Colors.red,
                 child: Center(
                   child: ElevatedButton(
@@ -30,12 +31,23 @@ class _AnimatedCrossfadeState extends State<AnimatedCrossfade> {
                   ),
                 ),
               ),
-              secondChild: Center(
-                child: Text("Greate", style: TextStyle(fontSize: 50)),
+              secondChild: Container(
+                height: 50,
+                color: Colors.red,
+                child: Center(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        check = true;
+                      });
+                    },
+                    child: Text('5000 tk'),
+                  ),
+                ),
               ),
               crossFadeState:
                   check ? CrossFadeState.showFirst : CrossFadeState.showSecond,
-              duration: Duration(seconds: 2),
+              duration: Duration(seconds: 1),
             ),
           ),
         ],
