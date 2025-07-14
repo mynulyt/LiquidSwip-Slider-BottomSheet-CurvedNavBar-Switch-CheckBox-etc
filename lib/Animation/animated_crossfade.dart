@@ -8,8 +8,38 @@ class AnimatedCrossfade extends StatefulWidget {
 }
 
 class _AnimatedCrossfadeState extends State<AnimatedCrossfade> {
+  bool check = true;
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: AnimatedCrossFade(
+              firstChild: Container(
+                color: Colors.red,
+                child: Center(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        check = false;
+                      });
+                    },
+                    child: Text('Tap to balance'),
+                  ),
+                ),
+              ),
+              secondChild: Center(
+                child: Text("Greate", style: TextStyle(fontSize: 50)),
+              ),
+              crossFadeState:
+                  check ? CrossFadeState.showFirst : CrossFadeState.showSecond,
+              duration: Duration(seconds: 2),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
