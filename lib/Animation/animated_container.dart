@@ -10,6 +10,8 @@ class AnimatedContainerPage extends StatefulWidget {
 class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: );
+    return Scaffold(
+      body: Center(child: AnimatedContainer(duration: Duration(seconds: 4))),
+    );
   }
 }
