@@ -24,7 +24,7 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
           child: AnimatedContainer(
             height: _value == false ? 150 : 350,
             width: _value == false ? 150 : 340,
-            color: Colors.purple,
+            color: _value == false ? Colors.purple : Colors.pink,
 
             duration: Duration(seconds: 4),
           ),
