@@ -11,12 +11,23 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
   bool _value = false;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: AnimatedContainer(
-          height: _value == false ? 150 : 350,
-          width: _value == false ? 150 : 350,
-          duration: Duration(seconds: 4),
+    return SafeArea(
+      child: Scaffold(
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            setState(() {
+              _value = !_value;
+            });
+          },
+        ),
+        body: Center(
+          child: AnimatedContainer(
+            height: _value == false ? 150 : 350,
+            width: _value == false ? 150 : 340,
+            color: Colors.purple,
+
+            duration: Duration(seconds: 4),
+          ),
         ),
       ),
     );
