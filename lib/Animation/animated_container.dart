@@ -8,10 +8,17 @@ class AnimatedContainerPage extends StatefulWidget {
 }
 
 class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
+  bool _value = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: AnimatedContainer(duration: Duration(seconds: 4))),
+      body: Center(
+        child: AnimatedContainer(
+          height: _value == false ? 150 : 350,
+          width: _value == false ? 150 : 350,
+          duration: Duration(seconds: 4),
+        ),
+      ),
     );
   }
 }
