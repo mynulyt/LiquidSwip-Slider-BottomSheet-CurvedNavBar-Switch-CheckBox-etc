@@ -22,8 +22,8 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
         ),
         body: Center(
           child: AnimatedContainer(
-            height: _value == false ? 150 : 350,
-            width: _value == false ? 150 : 300,
+            height: _value == false ? 150 : 250,
+            width: _value == false ? 150 : 450,
             color: _value == false ? Colors.purple : Colors.green,
 
             duration: Duration(seconds: 4),
