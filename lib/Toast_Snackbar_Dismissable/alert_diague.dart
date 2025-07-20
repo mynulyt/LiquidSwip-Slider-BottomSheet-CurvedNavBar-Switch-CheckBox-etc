@@ -10,6 +10,7 @@ class AlertDiague extends StatelessWidget {
         context: context,
         builder:
             (context) => AlertDialog(
+              backgroundColor: Colors.blue,
               title: Text("Warining!"),
               content: Text(
                 "This is a alert message mathod, i can do this succussfully! if you find out any worng code , please tell me or find out it",
