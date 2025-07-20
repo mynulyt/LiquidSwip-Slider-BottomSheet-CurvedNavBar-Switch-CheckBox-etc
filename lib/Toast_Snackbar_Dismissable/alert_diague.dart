@@ -39,6 +39,7 @@ class AlertDiague extends StatelessWidget {
         height: 40.0,
         width: double.infinity,
         child: ElevatedButton(
+          style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
           onPressed: () {
             showDialugeMessage();
           },
