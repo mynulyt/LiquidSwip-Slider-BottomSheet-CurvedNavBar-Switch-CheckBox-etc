@@ -4,6 +4,7 @@ import 'package:flutter_widget/Animation/animated_crossfade.dart';
 import 'package:flutter_widget/Bottom_sheet/buttom_sheet.dart';
 import 'package:flutter_widget/CheckBox/check_box.dart';
 import 'package:flutter_widget/Slider/slider.dart';
+import 'package:flutter_widget/Toast_Snackbar_Dismissable/alert_diague.dart';
 import 'package:flutter_widget/Toast_Snackbar_Dismissable/dismissable.dart';
 import 'package:flutter_widget/Toast_Snackbar_Dismissable/snakbar.dart';
 import 'package:flutter_widget/Toast_Snackbar_Dismissable/toast.dart';
@@ -75,6 +76,12 @@ class GradientPage extends StatelessWidget {
                 color: Colors.yellow,
                 height: 200,
                 child: AnimatedCrossfade(),
+              ),
+              SizedBox(height: 50),
+              Container(
+                color: Colors.yellow,
+                height: 200,
+                child: AlertDiague(),
               ),
             ],
           ),
