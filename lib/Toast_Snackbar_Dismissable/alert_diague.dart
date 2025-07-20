@@ -5,6 +5,8 @@ class AlertDiague extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: ElevatedButton(onPressed: () {}, child: Text("Alert Message")),
+    );
   }
 }
