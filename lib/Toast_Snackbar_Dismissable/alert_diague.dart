@@ -5,6 +5,10 @@ class AlertDiague extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    void showAlertMessage() {
+      showAlertMessage();
+    }
+
     return Scaffold(
       body: ElevatedButton(onPressed: () {}, child: Text("Alert Message")),
     );
