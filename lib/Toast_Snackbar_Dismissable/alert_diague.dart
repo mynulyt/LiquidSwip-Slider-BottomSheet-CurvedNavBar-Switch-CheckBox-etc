@@ -31,7 +31,7 @@ class AlertDiague extends StatelessWidget {
         onPressed: () {
           showDialugeMessage();
         },
-        child: Text("Alert Message"),
+        child: Text("Alert Message ."),
       ),
     );
   }
