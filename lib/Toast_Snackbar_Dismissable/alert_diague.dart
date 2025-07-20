@@ -8,19 +8,26 @@ class AlertDiague extends StatelessWidget {
     void showDialugeMessage() {
       showDialog(
         context: context,
-        barrierDismissible: false,
         builder:
             (context) => AlertDialog(
-              title: Text('this is title'),
-              content: Text('Are you sure ... ?'),
+              title: Text("Warining!"),
+              content: Text(
+                "This is a alert message mathod, i can do this succussfully! if you find out any worng code , please tell me or find out it",
+              ),
               actions: [
                 TextButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text('Cancle'),
+                  child: Text("ok"),
                 ),
-                ElevatedButton(onPressed: () {}, child: Text('Submit')),
+
+                TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: Text("Cencle"),
+                ),
               ],
             ),
       );
@@ -31,7 +38,7 @@ class AlertDiague extends StatelessWidget {
         onPressed: () {
           showDialugeMessage();
         },
-        child: Text("Alert Message ."),
+        child: Text("Check Alert"),
       ),
     );
   }
