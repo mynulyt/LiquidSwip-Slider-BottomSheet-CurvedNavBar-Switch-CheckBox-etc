@@ -35,11 +35,15 @@ class AlertDiague extends StatelessWidget {
     }
 
     return Scaffold(
-      body: ElevatedButton(
-        onPressed: () {
-          showDialugeMessage();
-        },
-        child: Text("Check Alert"),
+      body: SizedBox(
+        height: 40.0,
+        width: double.infinity,
+        child: ElevatedButton(
+          onPressed: () {
+            showDialugeMessage();
+          },
+          child: Text("Check Alert"),
+        ),
       ),
     );
   }
