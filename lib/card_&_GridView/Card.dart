@@ -5,6 +5,13 @@ class CardDesign extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Card()));
+    return Scaffold(
+      body: Center(
+        child: Card(
+          elevation: 10,
+          child: Container(height: 60, width: double.infinity),
+        ),
+      ),
+    );
   }
 }
