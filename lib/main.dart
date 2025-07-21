@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget/Curved_Nav_bar/curved_nav_bar.dart';
+import 'package:flutter_widget/card_&_GridView/Card.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Widget',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter Widget App Bar')),
-        body: CurvedNavBar(),
+        body: CardDesign(),
       ),
     );
   }
