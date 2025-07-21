@@ -8,11 +8,12 @@ class CardDesign extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Card(
+          elevation: 10,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
-          elevation: 10,
-          child: Container(height: 60, width: double.infinity),
+
+          child: Container(height: 200, width: double.infinity),
         ),
       ),
     );
