@@ -7,7 +7,17 @@ class GridViewDesign extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: GridView.count(crossAxisCount: 2, children: [CardDesign()]),
+      body: GridView.count(
+        crossAxisCount: 2,
+        children: [
+          CardDesign(),
+          CardDesign(),
+          CardDesign(),
+          CardDesign(),
+          CardDesign(),
+          CardDesign(),
+        ],
+      ),
     );
   }
 }
