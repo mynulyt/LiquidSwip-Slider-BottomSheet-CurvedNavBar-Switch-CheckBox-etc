@@ -8,6 +8,7 @@ class DropDownButtom extends StatefulWidget {
 }
 
 class _DropDownButtomState extends State<DropDownButtom> {
+  var selected = "Choose";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,8 +22,11 @@ class _DropDownButtomState extends State<DropDownButtom> {
                   value: "Mynul Alam",
                   child: Text("Mynul Alam"),
                 ),
+                DropdownMenuItem(value: "Rakib", child: Text("Rakib")),
               ],
-              onChanged: null,
+              onChanged: (val) {
+                setState(() {});
+              },
             ),
           ],
         ),
