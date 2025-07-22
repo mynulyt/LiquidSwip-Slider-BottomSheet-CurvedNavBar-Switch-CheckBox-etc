@@ -13,7 +13,7 @@ class _CheckBoxPageState extends State<CheckBoxPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: <Widget>[
+        children: [
           Text(_value == true ? "Checked" : "Uncheck"),
 
           Checkbox(
