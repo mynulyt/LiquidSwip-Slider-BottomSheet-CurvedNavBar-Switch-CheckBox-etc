@@ -16,6 +16,7 @@ class _DropDownButtomState extends State<DropDownButtom> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Text(selected, style: TextStyle(fontSize: 60)),
             DropdownButton(
               items: [
                 DropdownMenuItem(
@@ -25,7 +26,9 @@ class _DropDownButtomState extends State<DropDownButtom> {
                 DropdownMenuItem(value: "Rakib", child: Text("Rakib")),
               ],
               onChanged: (val) {
-                setState(() {});
+                setState(() {
+                  selected = val!;
+                });
               },
             ),
           ],
