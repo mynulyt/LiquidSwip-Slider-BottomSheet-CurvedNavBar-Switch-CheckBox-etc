@@ -13,7 +13,7 @@ class CardDesign extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
           ),
 
-          child: Container(height: 200, width: double.infinity),
+          child: SizedBox(height: 200, width: double.infinity),
         ),
       ),
     );
